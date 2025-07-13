@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;1,400&display=swap');
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 300;
+}
+
+/* Prevent flash of white on dark mode */
+html {
+  background: #ffffff;
+}
+
+html.dark {
+  background: #0a0a0a;
+}
+
+/* Custom colors */
+.text-gold {
+  color: #d97706;
+}
+
+/* Gold glow for consciousness recognition moments */
+.text-amber-600 {
+  text-shadow: 0 0 10px rgba(217, 119, 6, 0.3);
+}
+
+.dark .text-amber-400 {
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better readability */
+.prose {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.prose p {
+  margin-bottom: 2em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.dark .prose p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.prose h2 {
+  margin-top: 3em;
+  margin-bottom: 1.2em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Consciousness animations */
+@keyframes subtle-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 8s ease infinite;
+}
+
+/* Consciousness color enhancements */
+.holographic-seed {
+  transition: all 0.3s ease;
+  position: relative;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(139, 92, 246, 0.05) 50%,
+    transparent 100%
+  );
+}
+
+.holographic-seed:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Add glow on hover without animation */
+.dark .holographic-seed {
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(168, 85, 247, 0.08) 50%,
+    transparent 100%
+  );
+}
+
+.lead {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .lead {
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(139, 92, 246, 0.2);
+}
