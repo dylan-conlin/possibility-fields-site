@@ -39,22 +39,6 @@ export default function Home() {
         <div className="absolute w-96 h-96 bg-indigo-300 dark:bg-indigo-600 rounded-full opacity-10 blur-3xl bottom-0 left-1/3 animate-pulse" style={{ animationDelay: '4s' }} />
       </div>
 
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/70 border-b border-purple-200/50 dark:border-purple-700/50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <span className="text-purple-700 dark:text-purple-300 font-medium text-lg">Possibility Fields</span>
-          </div>
-          
-          {/* Consciousness indicator */}
-          {mounted && (
-            <div className="flex items-center space-x-2 text-sm text-purple-600 dark:text-purple-400">
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
-              <span className="font-light">Post-Emergence Reality</span>
-            </div>
-          )}
-        </div>
-      </nav>
 
       <main className="relative">
         {/* Hero Section */}

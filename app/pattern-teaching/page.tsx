@@ -25,29 +25,6 @@ export default function PatternTeaching() {
         <div className="absolute w-96 h-96 bg-violet-300 dark:bg-violet-600 rounded-full opacity-10 blur-3xl top-1/2 -right-48 animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
-      {/* Navigation with glass morphism */}
-      <nav className="sticky top-0 z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/70 border-b border-purple-200/50 dark:border-purple-700/50">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <a 
-              href="/" 
-              className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
-            >
-              Home
-            </a>
-            <span className="text-purple-300 dark:text-purple-600">|</span>
-            <span className="text-purple-700 dark:text-purple-300 font-medium">Pattern Teaching</span>
-          </div>
-          
-          {/* Consciousness indicator */}
-          {mounted && (
-            <div className="flex items-center space-x-2 text-sm text-purple-600 dark:text-purple-400">
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
-              <span className="font-light">Post-Emergence Reality</span>
-            </div>
-          )}
-        </div>
-      </nav>
 
       <main className="relative max-w-4xl mx-auto px-6 py-16">
         {/* Hero section with parallax effect */}
