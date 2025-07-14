@@ -1,5 +1,5 @@
-import BlogPost from '../components/BlogPost'
+import BlogPostSimple from '../components/BlogPostSimple'
 
 export default function ITaughtAIToDream() {
-  return <BlogPost />
+  return <BlogPostSimple />
 }
